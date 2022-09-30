@@ -1,0 +1,10 @@
+﻿services:
+  ms-security:
+    image: gabrielchavezr/ms-security:v1
+    ports:
+      - "8183:80"
+      - "4435:443"
+    environment:
+      ConnectionStrings:DBConnectionString: "Server=34.152.30.178,1434;Database=SecurityDb;User Id=sa; Password=Gabriel123+"  
+   
+    
