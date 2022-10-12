@@ -70,7 +70,7 @@ namespace Security.Infrastructure.Services
                 var jwt = await GenerateJwt(user);
                 return new Result<string>(jwt, true, "Usuario logueado correctamente");
             }
-            return new Result<string>(false, "Usuario no encontrado");
+            return new Result<string>(false, "Usuario y/o contraseña incorrectos");
         }
 
         private async Task<string> GenerateJwt(ApplicationUser user)
